@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # db/seeds.rb
 
-# parent_task = Task.create!(name: "Сдать английский")
-# Task.create!(name: "Грамматика", parent_id: parent_task.id)
-# Task.create!(name: "Чтение", parent_id: parent_task.id)
-# Task.create!(name: "Слушание", parent_id: parent_task.id)
-# Task.create!(name: "Письмо", parent_id: parent_task.id)
+parent_task = Task.create!(name: "Сдать английский")
+Task.create!(name: "Грамматика", parent_id: parent_task.id)
+Task.create!(name: "Чтение", parent_id: parent_task.id)
+Task.create!(name: "Слушание", parent_id: parent_task.id)
+Task.create!(name: "Письмо", parent_id: parent_task.id)
 
-Task.delete_all
+# Task.delete_all

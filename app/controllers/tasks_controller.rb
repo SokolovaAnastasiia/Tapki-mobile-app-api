@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
 
-    protect_from_forgery with: :null_session
+    # protect_from_forgery with: :null_session
 
     def index
         @tasks = Task.where(parent_id: nil)
@@ -16,7 +16,7 @@ class TasksController < ApplicationController
 
     def create
 
-        authenticity_token = form_authenticity_token
+        # authenticity_token = form_authenticity_token
         
         @task = Task.new(task_params)
         if @task.save

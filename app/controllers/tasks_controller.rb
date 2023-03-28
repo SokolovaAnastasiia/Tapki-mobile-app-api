@@ -26,7 +26,7 @@ class TasksController < ApplicationController
         end
     end
 
-    def update
+      def update
         @task = Task.find(params[:id])
         if @task.parent.present?
           @task.parent.update(task_params)
